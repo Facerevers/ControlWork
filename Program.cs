@@ -3,6 +3,11 @@
     foreach (string t in mas){
         if (t.Length <= 3) sizenewmas++;
     }
+    if (sizenewmas == 0){
+        string[] newmass = new string[1];
+        newmass[0] = "[]";
+        return newmass;
+    }
     string[] newmas = new string[sizenewmas];
     int i = 0;
     foreach (string t in mas){
