@@ -23,6 +23,11 @@ void ShowMas(string[] mas){
 }
 
 string[] GetStrings(int size){
+    if (size <= 0){
+        string[] mass = new string[1];
+        mass[0] = "[]";
+        return mass;
+    }
     string[] mas = new string[size];
     string txt = "";
     for (int i = 0; i < size; i++){
